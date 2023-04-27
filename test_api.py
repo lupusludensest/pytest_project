@@ -1,7 +1,5 @@
-import pytest
 import requests
 import json
-
 
 def test_valid_login():
     url = "https://reqres.in/api/login/"

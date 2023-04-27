@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
-from locators_amazon import *
+from amazon_locators import *
 
 
 class TestAmazon:
