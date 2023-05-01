@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from amazon_locators import *
 
 
-class TestAmazon:
+class TestAmazon: # python -m pytest -v -s .\amazon_test_automation_search.py::TestAmazon
     search_words = ('dress', 'shoes', 'toys', 'shirts')
     driver = ''
 
