@@ -1,6 +1,5 @@
 import pytest
 
-
 @pytest.fixture()
 def some_data():
     """Return answer to ultimate question."""
