@@ -20,7 +20,7 @@ def environment_setup():
     # Driver quit
     driver.quit()
 
-def test_facebook_login_till_market_place(environment_setup):
+def test_001_facebook_login_till_market_place(environment_setup):
     # Locators
     TEXT_HERE_1 = (By.XPATH, "//h2[@class='_8eso']")
     LOGIN_FLD = (By.ID, "email")
