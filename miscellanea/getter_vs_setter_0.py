@@ -19,7 +19,5 @@ raj = Geek()
 # setting the age using setter
 raj.set_age(21)
 
-print(raj._age)
-
 # retrieving age using getter
 print(raj.get_age())
