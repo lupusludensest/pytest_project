@@ -30,18 +30,18 @@ def test_002_fb_wrong_credentials(environment_setup):
     # Explicit wait
     wait = WebDriverWait(driver, 15)
 
-    # Send wrong login
+    # 2. Send wrong login
     wait.until(EC.presence_of_element_located(LOGIN)).clear()
     wait.until(EC.presence_of_element_located(LOGIN)).send_keys('wrong@wrong.com')
 
-    # Send wrong password
+    # 3. Send wrong password
     wait.until(EC.presence_of_element_located(PSWRD)).clear()
     wait.until(EC.presence_of_element_located(PSWRD)).send_keys('wrong_pswd')
 
-    # Click on login button
+    # 4. Click on login button
     wait.until(EC.element_to_be_clickable(LGN_BTN)).click()
 
-    # Verify "Try another way" text is here
+    # 5. Verify "Try another way" text is here
     searhed = ('Try another way')
     actual = (wait.until(EC.presence_of_element_located(INCRRT_HR)).text)
     print(f'Actual: "{actual}"\nVS expected:\n"{searhed}"')
@@ -50,9 +50,3 @@ def test_002_fb_wrong_credentials(environment_setup):
         print(f'Actual is OK:\n"{searhed}"\n')
     else:
         print(f'Actual email: "{actual}"\n')
-
-    # Sleep to see what we have
-    sleep(4)
-    #
-    # Driver quit
-    driver.quit()
