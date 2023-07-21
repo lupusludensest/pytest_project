@@ -8,7 +8,7 @@ def square(num):
     return num * num
 
 # Our test is parametrized
-@pytest.mark.parametrize("num, ref", [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25) ])
+@pytest.mark.parametrize("num, ref", [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25), (6, 36)])
 def test_square(num, ref):
     result = square(num)
     assert result == ref
