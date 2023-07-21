@@ -9,7 +9,7 @@ def printresult(String):
 # initializing string
 String = "GeeksforGeeks"
 ans = 0
-print(f"The number of 'e's in word is : ", end = "")
+print(f"The quantity of 'e's in word is : ", end = "")
 String = String.strip()
 
 for j in printresult(String):
